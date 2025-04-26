@@ -3,126 +3,148 @@
     "description": "iOS Developer",
     "image": "/avatar.jpg",
     "avatar": "/avatar.jpg",
-    "name": "Thomas A. Anderson (Neo)",
-    "skill": "Programador, hacker y el Elegido",
-    "location": "Matrix y el mundo real",
+    "name": "Gerardo Herrera Reyes",
+    "skill": "iOS Developer and tech enthusiast",
+    "location": "Mexico",
     "media": {
-        "email": "neo@metacortex.com",
+        "email": "gerardohre@gmail.com",
         "cv": "/data/cv.pdf",
-        "github": "https://github.com/thomasanderson",
-        "likedin": "https://linkedin.com/in/thomasanderson"
+        "github": "https://github.com/geraballz",
+        "likedin": "https://www.linkedin.com/in/gerardo-herrera-b83098130/"
     },
-    "about": "Soy un programador inquieto con una doble vida, ya que trabajo en una prestigiosa empresa de software pero también he cometido todos los crímenes informáticos que existen. Tengo la sensación de que nada es lo que parece ser.",
+    "about": "I love technology; I’ve always been passionate about creating my own things or understanding how something works, committed to my projects and the challenges that come my way.",
     "technologies": [
         {
             "icon": "devicon-devicon-plain",
-            "name": "Binario"
+            "name": "iOS Developer"
         },
         {
             "icon": "devicon-devicon-plain",
-            "name": "Ensamblador"
+            "name": "Arduino"
         },
         {
             "icon": "devicon-devicon-plain",
-            "name": "COBOL"
-        },
-        {
-            "icon": "devicon-c-plain",
-            "name": "C"
-        },
-        {
-            "icon": "devicon-python-plain",
-            "name": "Python"
+            "name": "Java"
         }
     ],
     "experience": [
         {
             "icon": "terminal",
-            "title": "Metacortex",
-            "subtitle": "Programador",
-            "description": "Programo software respetable desde un cubículo.",
-            "date": "1999"
+            "title": "Grainchain",
+            "subtitle": "Senior iOS Developer",
+            "description": "Full UI programmatically and custom graphics controls.",
+            "date": "2020"
         },
         {
-            "icon": "rabbit",
-            "title": "Nebuchadnezzar",
-            "subtitle": "El Elegido",
-            "description": "Me encargo de salvar el mundo.",
-            "date": "1999 - Actualidad"
+            "icon": "terminal",
+            "title": "Pegasus Control",
+            "subtitle": "iOS Developer",
+            "description": "Objective-C/Swift",
+            "date": "2017"
+        },
+        {
+            "icon": "terminal",
+            "title": "Global Standard",
+            "subtitle": "iOS Developer",
+            "description": "iOS app development",
+            "date": "2017"
+        },
+        {
+            "icon": "terminal",
+            "title": "Jaguar Labs Mobile Developer",
+            "subtitle": "Trainee iOS Developer",
+            "description": "iOS app development",
+            "date": "2017"
         }
     ],
     "projects": [
         {
-            "icon": "bar-chart-4",
-            "title": "Software random",
-            "subtitle": "Software propiedad de Metacortex",
-            "description": "Herramienta para hacer rico a otras personas.",
+            "icon": "scan-eye",
+            "title": "Visio Driver Assistant",
+            "subtitle": "Tech enthusiast?",
+            "description": "Visio Driver Assistant helps you identify objects while driving with alerts",
             "technologies": [
                 {
-                    "icon": "devicon-python-plain",
-                    "name": "Python"
+                    "icon": "devicon-apple-original",
+                    "name": "iOS"
                 },
                 {
-                    "icon": "devicon-django-plain",
-                    "name": "Django"
+                    "icon": "devicon-swift-plain",
+                    "name": "Swift"
                 }
             ],
             "image": "/project_1.jpg",
-            "url": "https://matrix.fandom.com/wiki/MetaCortex",
-            "github": "https://github.com/thomasanderson"
-        },
+            "url": "",
+            "github": "https://geraballz.github.io/Visio-driver-assistant/"
+        }, 
         {
-            "icon": "bug-off",
-            "title": "Hackeo Matrix",
-            "subtitle": "Mi obra maestra",
-            "description": "Migración del Matrix al mundo real y hackeo del sistema ficticio para salvar a la humanidad.",
+            "icon": "cpu",
+            "title": "WifiCamCarro",
+            "subtitle": "Build your remote-controlled robot, and with this app, you can control it!",
+            "description": "You can watch a video stream, control direction, lights, colors, speed, and record video using UDP commands.",
             "technologies": [
                 {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Binario"
+                    "icon": "devicon-apple-original",
+                    "name": "iOS"
+                },
+                {
+                    "icon": "devicon-swift-plain",
+                    "name": "Swift"
+                },
+                {
+                    "icon": "devicon-arduino-plain",
+                    "name": "Arduino"
                 }
+                
             ],
             "image": "/project_2.jpg",
-            "url": "https://matrix.fandom.com/wiki/Wiki",
-            "github": "https://github.com/thomasanderson"
+            "url": "https://apps.apple.com/mx/app/wificamcarro/id6744302034",
+            "github": "https://github.com/geraballz/geraballz-WifiCamCarro-1"
+        },
+        {
+            "icon": "music",
+            "title": "Classic Music Box",
+            "subtitle": "Choose play and enjoy the music with this classic sounds.",
+            "description": "",
+            "technologies": [
+                {
+                    "icon": "devicon-apple-original",
+                    "name": "iOS"
+                },
+                {
+                    "icon": "devicon-swift-plain",
+                    "name": "Swift"
+                }
+                
+            ],
+            "image": "/project_3.jpg",
+            "url": "https://apps.apple.com/mx/app/classic-music-box/id1572054860",
+            "github": ""
         }
+        
     ],
     "training": [
         {
-            "icon": "backpack",
-            "title": "Central West Junior High",
-            "subtitle": "Una escuela",
-            "description": "Aprendí cosas.",
-            "date": "Indeterminado",
-            "certificate": "https://en.wikipedia.org/wiki/Neo_(The_Matrix)"
-        },
-        {
             "icon": "graduation-cap",
-            "title": "Owen Patterson High",
-            "subtitle": "Otra escuela",
-            "description": "Aprendí más cosas.",
-            "date": "Indeterminado",
-            "certificate": "https://en.wikipedia.org/wiki/Neo_(The_Matrix)"
+            "title": "Tecnológico Nacional de México",
+            "subtitle": "Mexico",
+            "description": "Ing. Sistemas Computacionales",
+            "date": "2016",
+            "certificate": ""
         }
     ],
     "extras": [
         {
             "image": "/extra_1.jpg",
-            "title": "The Matrix",
-            "description": "Aparecí en esta película.",
-            "url": "https://en.wikipedia.org/wiki/The_Matrix"
+            "title": "Programming Contest",
+            "description": "Second Place",
+            "url": ""
         },
         {
             "image": "/extra_2.jpg",
-            "title": "The Matrix Reloaded",
-            "description": "Y en esta otra.",
+            "title": "Certification Microsoft TechnologyAssociate.",
+            "description": "",
             "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
-        },
-        {
-            "image": "/extra_3.jpg",
-            "title": "The Matrix Revolutions",
-            "description": "Y en esta más.",
-            "url": "https://en.wikipedia.org/wiki/The_Matrix_Revolutions"
         }
     ]
 }
