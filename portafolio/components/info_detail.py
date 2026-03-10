@@ -2,30 +2,28 @@ import reflex as rx
 from portafolio.components.icon_badge import icon_badge
 from portafolio.components.icon_button import icon_button
 from portafolio.data import Info
-from portafolio.state import LanguageState
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, Size
 
 
 def info_detail(info: Info) -> rx.Component:
-    subtitle_text = rx.cond(
-        LanguageState.language == "es",
-        info.subtitle_es if info.subtitle_es else info.subtitle,
-        info.subtitle
-    )
-    description_text = rx.cond(
-        LanguageState.language == "es",
-        info.description_es if info.description_es else info.description,
-        info.description
-    )
-
     return rx.flex(
         rx.hstack(
             icon_badge(info.icon),
             rx.vstack(
                 rx.text.strong(info.title),
-                rx.text(subtitle_text),
                 rx.text(
-                    description_text,
+                    rx.el.span(info.subtitle, class_name="lang-en"),
+                    rx.el.span(
+                        info.subtitle_es if info.subtitle_es else info.subtitle,
+                        class_name="lang-es"
+                    ),
+                ),
+                rx.text(
+                    rx.el.span(info.description, class_name="lang-en"),
+                    rx.el.span(
+                        info.description_es if info.description_es else info.description,
+                        class_name="lang-es"
+                    ),
                     size=Size.SMALL.value,
                     color_scheme="gray"
                 ),
@@ -47,17 +45,11 @@ def info_detail(info: Info) -> rx.Component:
                 rx.hstack(
                     rx.cond(
                         info.url != "",
-                        icon_button(
-                            "link",
-                            info.url
-                        )
+                        icon_button("link", info.url)
                     ),
                     rx.cond(
                         info.github != "",
-                        icon_button(
-                            "github",
-                            info.github
-                        )
+                        icon_button("github", info.github)
                     )
                 ),
                 spacing=Size.SMALL.value,
@@ -83,11 +75,7 @@ def info_detail(info: Info) -> rx.Component:
             ),
             rx.cond(
                 info.certificate != "",
-                icon_button(
-                    "shield-check",
-                    info.certificate,
-                    solid=True
-                )
+                icon_button("shield-check", info.certificate, solid=True)
             ),
             spacing=Size.SMALL.value,
             align="end"

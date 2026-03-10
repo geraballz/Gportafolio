@@ -1,8 +1,2 @@
-import reflex as rx
-
-
-class LanguageState(rx.State):
-    language: str = "en"
-
-    def set_language(self, lang: str):
-        self.language = lang
+# state.py — kept as placeholder for future use
+# The static Vercel build uses pure JS for language switching (no WebSocket needed)

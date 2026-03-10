@@ -2,7 +2,6 @@ import reflex as rx
 from portafolio.components.heading import heading
 from portafolio.components.media import media
 from portafolio.data import Data
-from portafolio.state import LanguageState
 from portafolio.styles.styles import Size
 
 
@@ -14,12 +13,14 @@ def header(data: Data) -> rx.Component:
         ),
         rx.vstack(
             heading(data.name, True),
-            heading(
-                rx.cond(
-                    LanguageState.language == "es",
+            rx.heading(
+                rx.el.span(data.skill, class_name="lang-en"),
+                rx.el.span(
                     data.skill_es if data.skill_es else data.skill,
-                    data.skill
-                )
+                    class_name="lang-es"
+                ),
+                as_="h2",
+                size=Size.MEDIUM.value,
             ),
             rx.text(
                 rx.icon("map-pin"),

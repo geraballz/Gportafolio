@@ -1,16 +1,12 @@
 import reflex as rx
-from portafolio.components.heading import heading
-from portafolio.state import LanguageState
+from portafolio.components.bilingual import bilingual_heading
 
 
 def about(description_en: str, description_es: str) -> rx.Component:
     return rx.vstack(
-        heading(rx.cond(LanguageState.language == "es", "Sobre Mí", "About Me")),
+        bilingual_heading("About Me", "Sobre Mí"),
         rx.text(
-            rx.cond(
-                LanguageState.language == "es",
-                description_es if description_es else description_en,
-                description_en
-            )
+            rx.el.span(description_en, class_name="lang-en"),
+            rx.el.span(description_es, class_name="lang-es"),
         )
     )

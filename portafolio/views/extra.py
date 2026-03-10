@@ -1,14 +1,13 @@
 import reflex as rx
 from portafolio.components.card_detail import card_detail
-from portafolio.components.heading import heading
+from portafolio.components.bilingual import bilingual_heading
 from portafolio.data import Extra
-from portafolio.state import LanguageState
 from portafolio.styles.styles import Size
 
 
 def extra(extras: list[Extra]) -> rx.Component:
     return rx.vstack(
-        heading(rx.cond(LanguageState.language == "es", "Extra", "Extra")),
+        bilingual_heading("Extra", "Extra"),
         rx.mobile_only(
             rx.vstack(
                 *[

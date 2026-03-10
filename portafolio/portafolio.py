@@ -2,7 +2,6 @@ import reflex as rx
 from portafolio import data
 from portafolio.components.language_selector import language_selector
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size
-from portafolio.state import LanguageState
 from portafolio.views.about import about
 from portafolio.views.extra import extra
 from portafolio.views.footer import footer
@@ -12,11 +11,16 @@ from portafolio.views.tech_stack import tech_stack
 
 DATA = data.data
 
+# Hide .lang-es by default; JS will toggle based on localStorage
+LANG_STYLE = """
+.lang-es { display: none; }
+"""
+
 
 def index() -> rx.Component:
     return rx.center(
-        # rx.theme_panel(),
         rx.vstack(
+            rx.el.style(LANG_STYLE),
             rx.hstack(
                 rx.spacer(),
                 language_selector(),
@@ -28,18 +32,9 @@ def index() -> rx.Component:
             about(DATA.about, DATA.about_es),
             rx.divider(),
             tech_stack(DATA.technologies),
-            info(
-                "Experience", "Experiencia",
-                DATA.experience
-            ),
-            info(
-                "Projects", "Proyectos",
-                DATA.projects
-            ),
-            info(
-                "Academy", "Formación",
-                DATA.training
-            ),
+            info("Experience", "Experiencia", DATA.experience),
+            info("Projects", "Proyectos", DATA.projects),
+            info("Academy", "Formación", DATA.training),
             extra(DATA.extras),
             rx.divider(),
             footer(DATA.media, DATA.name),
