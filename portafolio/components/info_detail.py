@@ -1,49 +1,50 @@
 import reflex as rx
 from portafolio.components.icon_badge import icon_badge
 from portafolio.components.icon_button import icon_button
+from portafolio.data import Info
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, Size
 
 
-def info_detail(info: dict) -> rx.Component:
+def info_detail(info: Info) -> rx.Component:
     return rx.flex(
         rx.hstack(
-            icon_badge(info["icon"]),
+            icon_badge(info.icon),
             rx.vstack(
-                rx.text.strong(info["title"]),
-                rx.text(info["subtitle"]),
+                rx.text.strong(info.title),
+                rx.text(info.subtitle),
                 rx.text(
-                    info["description"],
+                    info.description,
                     size=Size.SMALL.value,
                     color_scheme="gray"
                 ),
                 rx.cond(
-                    info["technologies"],
+                    info.technologies,
                     rx.flex(
-                        rx.foreach(
-                            info["technologies"],
-                            lambda technology: rx.badge(
-                                rx.box(class_name=technology["icon"]),
-                                technology["name"],
+                        *[
+                            rx.badge(
+                                rx.box(class_name=technology.icon),
+                                technology.name,
                                 color_scheme="gray"
                             )
-                        ),
+                            for technology in info.technologies
+                        ],
                         wrap="wrap",
                         spacing=Size.SMALL.value
                     )
                 ),
                 rx.hstack(
                     rx.cond(
-                        info["url"] != "",
+                        info.url != "",
                         icon_button(
                             "link",
-                            info["url"]
+                            info.url
                         )
                     ),
                     rx.cond(
-                        info["github"] != "",
+                        info.github != "",
                         icon_button(
                             "github",
-                            info["github"]
+                            info.github
                         )
                     )
                 ),
@@ -54,9 +55,9 @@ def info_detail(info: dict) -> rx.Component:
             width="100%"
         ),
         rx.cond(
-            info["image"] != "",
+            info.image != "",
             rx.image(
-                src=info["image"],
+                src=info.image,
                 height=IMAGE_HEIGHT,
                 width="auto",
                 border_radius=EmSize.DEFAULT.value,
@@ -65,14 +66,14 @@ def info_detail(info: dict) -> rx.Component:
         ),
         rx.vstack(
             rx.cond(
-                info["date"] != "",
-                rx.badge(info["date"])
+                info.date != "",
+                rx.badge(info.date)
             ),
             rx.cond(
-                info["certificate"] != "",
+                info.certificate != "",
                 icon_button(
                     "shield-check",
-                    info["certificate"],
+                    info.certificate,
                     solid=True
                 )
             ),

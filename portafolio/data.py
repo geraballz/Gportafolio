@@ -47,7 +47,6 @@ class Data:
             name,
             skill,
             location,
-            sections,
             media,
             about,
             technologies,
@@ -63,7 +62,6 @@ class Data:
         self.name = name
         self.skill = skill
         self.location = location
-        self.sections = sections
         self.media = Media(**media)
         self.about = about
         self.technologies = [Technology(**tech) for tech in technologies]
@@ -76,7 +74,4 @@ class Data:
 with open("assets/data/data.json") as file:
     json_data = json.load(file)
 
-def get_data(language: str = "en") -> dict:
-    return json_data.get(language, json_data["en"])
-
-data = get_data()
+data = Data(**json_data)

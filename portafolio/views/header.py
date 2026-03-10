@@ -1,24 +1,25 @@
 import reflex as rx
 from portafolio.components.heading import heading
 from portafolio.components.media import media
+from portafolio.data import Data
 from portafolio.styles.styles import Size
 
 
-def header(avatar: str, name: str, skill: str, location: str, email: str, cv: str, github: str, linkedin: str) -> rx.Component:
+def header(data: Data) -> rx.Component:
     return rx.hstack(
         rx.avatar(
-            src=avatar,
+            src=data.avatar,
             size=Size.BIG.value
         ),
         rx.vstack(
-            heading(name, True),
-            heading(skill),
+            heading(data.name, True),
+            heading(data.skill),
             rx.text(
                 rx.icon("map-pin"),
-                location,
+                data.location,
                 display="inherit"
             ),
-            media(email, cv, github, linkedin),
+            media(data.media),
             spacing=Size.SMALL.value,
         ),
         spacing=Size.DEFAULT.value,
