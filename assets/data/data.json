@@ -1,166 +1,336 @@
 {
-    "title": "Gerardo Herrera Reyes",
-    "description": "iOS Developer",
-    "image": "/avatar.jpg",
-    "avatar": "/avatar.jpg",
-    "name": "Gerardo Herrera Reyes",
-    "skill": "iOS Developer and tech enthusiast",
-    "location": "Mexico",
-    "media": {
-        "email": "gerardohre@gmail.com",
-        "cv": "/data/cv.pdf",
-        "github": "https://github.com/geraballz",
-        "likedin": "https://www.linkedin.com/in/gerardo-herrera-b83098130/"
+    "en": {
+        "title": "Gerardo Herrera Reyes",
+        "description": "iOS Developer",
+        "image": "/avatar.jpg",
+        "avatar": "/avatar.jpg",
+        "name": "Gerardo Herrera Reyes",
+        "skill": "iOS Developer and tech enthusiast",
+        "location": "Mexico",
+        "sections": {
+            "experience": "Experience",
+            "projects": "Projects",
+            "academy": "Academy"
+        },
+        "media": {
+            "email": "gerardohre@gmail.com",
+            "cv": "/data/cv.pdf",
+            "github": "https://github.com/geraballz",
+            "likedin": "https://www.linkedin.com/in/gerardo-herrera-b83098130/"
+        },
+        "about": "I love technology; I've always been passionate about creating my own things or understanding how something works, committed to my projects and the challenges that come my way.",
+        "technologies": [
+            {
+                "icon": "devicon-devicon-plain",
+                "name": "iOS Developer"
+            },
+            {
+                "icon": "devicon-devicon-plain",
+                "name": "Arduino"
+            },
+            {
+                "icon": "devicon-devicon-plain",
+                "name": "Java"
+            }
+        ],
+        "experience": [
+            {
+                "icon": "terminal",
+                "title": "Grainchain",
+                "subtitle": "Senior iOS Developer",
+                "description": "Full UI programmatically and custom graphics controls.",
+                "date": "2020"
+            },
+            {
+                "icon": "terminal",
+                "title": "Pegasus Control",
+                "subtitle": "iOS Developer",
+                "description": "Objective-C/Swift",
+                "date": "2017"
+            },
+            {
+                "icon": "terminal",
+                "title": "Global Standard",
+                "subtitle": "iOS Developer",
+                "description": "iOS app development",
+                "date": "2017"
+            },
+            {
+                "icon": "terminal",
+                "title": "Jaguar Labs Mobile Developer",
+                "subtitle": "Trainee iOS Developer",
+                "description": "iOS app development",
+                "date": "2017"
+            }
+        ],
+        "projects": [
+            {
+                "icon": "scan-eye",
+                "title": "Visio Driver Assistant",
+                "subtitle": "Tech enthusiast?",
+                "description": "Visio Driver Assistant helps you identify objects while driving with alerts",
+                "technologies": [
+                    {
+                        "icon": "devicon-apple-original",
+                        "name": "iOS"
+                    },
+                    {
+                        "icon": "devicon-swift-plain",
+                        "name": "Swift"
+                    }
+                ],
+                "image": "/project_1.jpg",
+                "url": "https://apps.apple.com/mx/app/visio-driver-assistant/id6743371166",
+                "github": "https://geraballz.github.io/Visio-driver-assistant/"
+            },
+            {
+                "icon": "cpu",
+                "title": "WifiCamCarro",
+                "subtitle": "Build your remote-controlled robot, and with this app, you can control it!",
+                "description": "You can watch a video stream, control direction, lights, colors, speed, and record video using UDP commands.",
+                "technologies": [
+                    {
+                        "icon": "devicon-apple-original",
+                        "name": "iOS"
+                    },
+                    {
+                        "icon": "devicon-swift-plain",
+                        "name": "Swift"
+                    },
+                    {
+                        "icon": "devicon-arduino-plain",
+                        "name": "Arduino"
+                    }
+                ],
+                "image": "/project_2.jpg",
+                "url": "https://apps.apple.com/mx/app/wificamcarro/id6744302034",
+                "github": "https://github.com/geraballz/geraballz-WifiCamCarro-1"
+            },
+            {
+                "icon": "music",
+                "title": "Classic Music Box",
+                "subtitle": "Choose play and enjoy the music with this classic sounds.",
+                "description": "",
+                "technologies": [
+                    {
+                        "icon": "devicon-apple-original",
+                        "name": "iOS"
+                    },
+                    {
+                        "icon": "devicon-swift-plain",
+                        "name": "Swift"
+                    }
+                ],
+                "image": "/project_3.jpg",
+                "url": "https://apps.apple.com/mx/app/classic-music-box/id1572054860",
+                "github": ""
+            },
+            {
+                "icon": "terminal",
+                "title": "Mi Empleo Seguro",
+                "subtitle": "Busca profesiones cerca de ti.",
+                "description": "",
+                "technologies": [
+                    {
+                        "icon": "nodejs",
+                        "name": "Web"
+                    }
+                ],
+                "image": "/project_4.jpg",
+                "url": "https://miempleoseguro.xyz",
+                "github": ""
+            }
+        ],
+        "training": [
+            {
+                "icon": "graduation-cap",
+                "title": "Tecnológico Nacional de México",
+                "subtitle": "Mexico",
+                "description": "Ing. Sistemas Computacionales",
+                "date": "2016",
+                "certificate": ""
+            }
+        ],
+        "extras": [
+            {
+                "image": "/extra_1.jpg",
+                "title": "Programming Contest",
+                "description": "Second Place",
+                "url": ""
+            },
+            {
+                "image": "/extra_2.jpg",
+                "title": "Certification Microsoft TechnologyAssociate.",
+                "description": "F569-4918",
+                "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
+            }
+        ]
     },
-    "about": "I love technology; I’ve always been passionate about creating my own things or understanding how something works, committed to my projects and the challenges that come my way.",
-    "technologies": [
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "iOS Developer"
+    "es": {
+        "title": "Gerardo Herrera Reyes",
+        "description": "Desarrollador iOS",
+        "image": "/avatar.jpg",
+        "avatar": "/avatar.jpg",
+        "name": "Gerardo Herrera Reyes",
+        "skill": "Desarrollador iOS y entusiasta de la tecnología",
+        "location": "México",
+        "sections": {
+            "experience": "Experiencia",
+            "projects": "Proyectos",
+            "academy": "Academia"
         },
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "Arduino"
+        "media": {
+            "email": "gerardohre@gmail.com",
+            "cv": "/data/cv.pdf",
+            "github": "https://github.com/geraballz",
+            "likedin": "https://www.linkedin.com/in/gerardo-herrera-b83098130/"
         },
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "Java"
-        }
-    ],
-    "experience": [
-        {
-            "icon": "terminal",
-            "title": "Grainchain",
-            "subtitle": "Senior iOS Developer",
-            "description": "Full UI programmatically and custom graphics controls.",
-            "date": "2020"
-        },
-        {
-            "icon": "terminal",
-            "title": "Pegasus Control",
-            "subtitle": "iOS Developer",
-            "description": "Objective-C/Swift",
-            "date": "2017"
-        },
-        {
-            "icon": "terminal",
-            "title": "Global Standard",
-            "subtitle": "iOS Developer",
-            "description": "iOS app development",
-            "date": "2017"
-        },
-        {
-            "icon": "terminal",
-            "title": "Jaguar Labs Mobile Developer",
-            "subtitle": "Trainee iOS Developer",
-            "description": "iOS app development",
-            "date": "2017"
-        }
-    ],
-    "projects": [
-        {
-            "icon": "scan-eye",
-            "title": "Visio Driver Assistant",
-            "subtitle": "Tech enthusiast?",
-            "description": "Visio Driver Assistant helps you identify objects while driving with alerts",
-            "technologies": [
-                {
-                    "icon": "devicon-apple-original",
-                    "name": "iOS"
-                },
-                {
-                    "icon": "devicon-swift-plain",
-                    "name": "Swift"
-                }
-            ],
-            "image": "/project_1.jpg",
-            "url": "https://apps.apple.com/mx/app/visio-driver-assistant/id6743371166",
-            "github": "https://geraballz.github.io/Visio-driver-assistant/"
-        }, 
-        {
-            "icon": "cpu",
-            "title": "WifiCamCarro",
-            "subtitle": "Build your remote-controlled robot, and with this app, you can control it!",
-            "description": "You can watch a video stream, control direction, lights, colors, speed, and record video using UDP commands.",
-            "technologies": [
-                {
-                    "icon": "devicon-apple-original",
-                    "name": "iOS"
-                },
-                {
-                    "icon": "devicon-swift-plain",
-                    "name": "Swift"
-                },
-                {
-                    "icon": "devicon-arduino-plain",
-                    "name": "Arduino"
-                }
-                
-            ],
-            "image": "/project_2.jpg",
-            "url": "https://apps.apple.com/mx/app/wificamcarro/id6744302034",
-            "github": "https://github.com/geraballz/geraballz-WifiCamCarro-1"
-        },
-        {
-            "icon": "music",
-            "title": "Classic Music Box",
-            "subtitle": "Choose play and enjoy the music with this classic sounds.",
-            "description": "",
-            "technologies": [
-                {
-                    "icon": "devicon-apple-original",
-                    "name": "iOS"
-                },
-                {
-                    "icon": "devicon-swift-plain",
-                    "name": "Swift"
-                }
-                
-            ],
-            "image": "/project_3.jpg",
-            "url": "https://apps.apple.com/mx/app/classic-music-box/id1572054860",
-            "github": ""
-        },
-                {
-            "icon": "terminal",
-            "title": "Mi Empleo Seguro",
-            "subtitle": "Busca profesiones cerca de ti.",
-            "description": "",
-            "technologies": [
-                {
-                    "icon": "nodejs",
-                    "name": "Web"
-                }
-                
-            ],
-            "image": "/project_4.jpg",
-            "url": "https://miempleoseguro.xyz",
-            "github": ""
-        }
-        
-    ],
-    "training": [
-        {
-            "icon": "graduation-cap",
-            "title": "Tecnológico Nacional de México",
-            "subtitle": "Mexico",
-            "description": "Ing. Sistemas Computacionales",
-            "date": "2016",
-            "certificate": ""
-        }
-    ],
-    "extras": [
-        {
-            "image": "/extra_1.jpg",
-            "title": "Programming Contest",
-            "description": "Second Place",
-            "url": ""
-        },
-        {
-            "image": "/extra_2.jpg",
-            "title": "Certification Microsoft TechnologyAssociate.",
-            "description": "F569-4918",
-            "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
-        }
-    ]
+        "about": "Me encanta la tecnología; siempre he sido apasionado por crear mis propias cosas o entender cómo funciona algo, comprometido con mis proyectos y los desafíos que se me presentan.",
+        "technologies": [
+            {
+                "icon": "devicon-devicon-plain",
+                "name": "Desarrollador iOS"
+            },
+            {
+                "icon": "devicon-devicon-plain",
+                "name": "Arduino"
+            },
+            {
+                "icon": "devicon-devicon-plain",
+                "name": "Java"
+            }
+        ],
+        "experience": [
+            {
+                "icon": "terminal",
+                "title": "Grainchain",
+                "subtitle": "Desarrollador iOS Senior",
+                "description": "UI completa programáticamente y controles gráficos personalizados.",
+                "date": "2020"
+            },
+            {
+                "icon": "terminal",
+                "title": "Pegasus Control",
+                "subtitle": "Desarrollador iOS",
+                "description": "Objective-C/Swift",
+                "date": "2017"
+            },
+            {
+                "icon": "terminal",
+                "title": "Global Standard",
+                "subtitle": "Desarrollador iOS",
+                "description": "Desarrollo de aplicaciones iOS",
+                "date": "2017"
+            },
+            {
+                "icon": "terminal",
+                "title": "Jaguar Labs Mobile Developer",
+                "subtitle": "Desarrollador iOS en Prácticas",
+                "description": "Desarrollo de aplicaciones iOS",
+                "date": "2017"
+            }
+        ],
+        "projects": [
+            {
+                "icon": "scan-eye",
+                "title": "Visio Driver Assistant",
+                "subtitle": "¿Entusiasta de la tecnología?",
+                "description": "Visio Driver Assistant te ayuda a identificar objetos mientras conduces con alertas",
+                "technologies": [
+                    {
+                        "icon": "devicon-apple-original",
+                        "name": "iOS"
+                    },
+                    {
+                        "icon": "devicon-swift-plain",
+                        "name": "Swift"
+                    }
+                ],
+                "image": "/project_1.jpg",
+                "url": "https://apps.apple.com/mx/app/visio-driver-assistant/id6743371166",
+                "github": "https://geraballz.github.io/Visio-driver-assistant/"
+            },
+            {
+                "icon": "cpu",
+                "title": "WifiCamCarro",
+                "subtitle": "¡Construye tu robot controlado remotamente, y con esta app, puedes controlarlo!",
+                "description": "Puedes ver un flujo de video, controlar dirección, luces, colores, velocidad y grabar video usando comandos UDP.",
+                "technologies": [
+                    {
+                        "icon": "devicon-apple-original",
+                        "name": "iOS"
+                    },
+                    {
+                        "icon": "devicon-swift-plain",
+                        "name": "Swift"
+                    },
+                    {
+                        "icon": "devicon-arduino-plain",
+                        "name": "Arduino"
+                    }
+                ],
+                "image": "/project_2.jpg",
+                "url": "https://apps.apple.com/mx/app/wificamcarro/id6744302034",
+                "github": "https://github.com/geraballz/geraballz-WifiCamCarro-1"
+            },
+            {
+                "icon": "music",
+                "title": "Classic Music Box",
+                "subtitle": "Elige reproducir y disfruta la música con estos sonidos clásicos.",
+                "description": "",
+                "technologies": [
+                    {
+                        "icon": "devicon-apple-original",
+                        "name": "iOS"
+                    },
+                    {
+                        "icon": "devicon-swift-plain",
+                        "name": "Swift"
+                    }
+                ],
+                "image": "/project_3.jpg",
+                "url": "https://apps.apple.com/mx/app/classic-music-box/id1572054860",
+                "github": ""
+            },
+            {
+                "icon": "terminal",
+                "title": "Mi Empleo Seguro",
+                "subtitle": "Busca profesiones cerca de ti.",
+                "description": "",
+                "technologies": [
+                    {
+                        "icon": "nodejs",
+                        "name": "Web"
+                    }
+                ],
+                "image": "/project_4.jpg",
+                "url": "https://miempleoseguro.xyz",
+                "github": ""
+            }
+        ],
+        "training": [
+            {
+                "icon": "graduation-cap",
+                "title": "Tecnológico Nacional de México",
+                "subtitle": "México",
+                "description": "Ing. Sistemas Computacionales",
+                "date": "2016",
+                "certificate": ""
+            }
+        ],
+        "extras": [
+            {
+                "image": "/extra_1.jpg",
+                "title": "Concurso de Programación",
+                "description": "Segundo Lugar",
+                "url": ""
+            },
+            {
+                "image": "/extra_2.jpg",
+                "title": "Certificación Microsoft Technology Associate.",
+                "description": "F569-4918",
+                "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
+            }
+        ]
+    }
 }

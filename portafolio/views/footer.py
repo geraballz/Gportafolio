@@ -1,12 +1,11 @@
 import reflex as rx
 from portafolio.components.media import media
-from portafolio.data import Media
 from portafolio.styles.styles import Size
 
 
-def footer(data: Media) -> rx.Component:
+def footer(email: str, cv: str, github: str, linkedin: str) -> rx.Component:
     return rx.vstack(
         rx.text("Name"),
-        media(data),
+        media(email, cv, github, linkedin),
         spacing=Size.SMALL.value
     )
