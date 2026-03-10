@@ -120,6 +120,22 @@
             "image": "/project_3.jpg",
             "url": "https://apps.apple.com/mx/app/classic-music-box/id1572054860",
             "github": ""
+        },
+                {
+            "icon": "terminal",
+            "title": "Mi Empleo Seguro",
+            "subtitle": "Busca profesiones cerca de ti.",
+            "description": "",
+            "technologies": [
+                {
+                    "icon": "nodejs",
+                    "name": "Web"
+                }
+                
+            ],
+            "image": "/project_4.jpg",
+            "url": "https://miempleoseguro.xyz",
+            "github": ""
         }
         
     ],
