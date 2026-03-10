@@ -12,17 +12,19 @@ def info_detail(info: Info) -> rx.Component:
             rx.vstack(
                 rx.text.strong(info.title),
                 rx.text(
-                    rx.el.span(info.subtitle, class_name="lang-en"),
-                    rx.el.span(
+                    rx.box(info.subtitle, class_name="lang-en", display="inline"),
+                    rx.box(
                         info.subtitle_es if info.subtitle_es else info.subtitle,
-                        class_name="lang-es"
+                        class_name="lang-es",
+                        display="inline"
                     ),
                 ),
                 rx.text(
-                    rx.el.span(info.description, class_name="lang-en"),
-                    rx.el.span(
+                    rx.box(info.description, class_name="lang-en", display="inline"),
+                    rx.box(
                         info.description_es if info.description_es else info.description,
-                        class_name="lang-es"
+                        class_name="lang-es",
+                        display="inline"
                     ),
                     size=Size.SMALL.value,
                     color_scheme="gray"

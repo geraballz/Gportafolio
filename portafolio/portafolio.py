@@ -11,16 +11,10 @@ from portafolio.views.tech_stack import tech_stack
 
 DATA = data.data
 
-# Hide .lang-es by default; JS will toggle based on localStorage
-LANG_STYLE = """
-.lang-es { display: none; }
-"""
-
 
 def index() -> rx.Component:
     return rx.center(
         rx.vstack(
-            rx.el.style(LANG_STYLE),
             rx.hstack(
                 rx.spacer(),
                 language_selector(),

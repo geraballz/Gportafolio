@@ -16,17 +16,19 @@ def card_detail(extra: Extra) -> rx.Component:
                 pb=Size.DEFAULT.value
             ),
             rx.text.strong(
-                rx.el.span(extra.title, class_name="lang-en"),
-                rx.el.span(
+                rx.box(extra.title, class_name="lang-en", display="inline"),
+                rx.box(
                     extra.title_es if extra.title_es else extra.title,
-                    class_name="lang-es"
+                    class_name="lang-es",
+                    display="inline"
                 ),
             ),
             rx.text(
-                rx.el.span(extra.description, class_name="lang-en"),
-                rx.el.span(
+                rx.box(extra.description, class_name="lang-en", display="inline"),
+                rx.box(
                     extra.description_es if extra.description_es else extra.description,
-                    class_name="lang-es"
+                    class_name="lang-es",
+                    display="inline"
                 ),
                 size=Size.SMALL.value,
                 color_scheme="gray"

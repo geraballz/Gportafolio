@@ -14,10 +14,11 @@ def header(data: Data) -> rx.Component:
         rx.vstack(
             heading(data.name, True),
             rx.heading(
-                rx.el.span(data.skill, class_name="lang-en"),
-                rx.el.span(
+                rx.box(data.skill, class_name="lang-en", display="inline"),
+                rx.box(
                     data.skill_es if data.skill_es else data.skill,
-                    class_name="lang-es"
+                    class_name="lang-es",
+                    display="inline"
                 ),
                 as_="h2",
                 size=Size.MEDIUM.value,

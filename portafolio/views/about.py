@@ -6,7 +6,7 @@ def about(description_en: str, description_es: str) -> rx.Component:
     return rx.vstack(
         bilingual_heading("About Me", "Sobre Mí"),
         rx.text(
-            rx.el.span(description_en, class_name="lang-en"),
-            rx.el.span(description_es, class_name="lang-es"),
+            rx.box(description_en, class_name="lang-en", display="inline"),
+            rx.box(description_es, class_name="lang-es", display="inline"),
         )
     )
