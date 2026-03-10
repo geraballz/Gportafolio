@@ -1,6 +1,8 @@
 import reflex as rx
 from portafolio import data
+from portafolio.components.language_selector import language_selector
 from portafolio.styles.styles import BASE_STYLE, MAX_WIDTH, STYLESHEETS, EmSize, Size
+from portafolio.state import LanguageState
 from portafolio.views.about import about
 from portafolio.views.extra import extra
 from portafolio.views.footer import footer
@@ -15,16 +17,32 @@ def index() -> rx.Component:
     return rx.center(
         # rx.theme_panel(),
         rx.vstack(
+            rx.hstack(
+                rx.spacer(),
+                language_selector(),
+                width="100%",
+                padding_x=EmSize.MEDIUM.value,
+                padding_top=EmSize.MEDIUM.value,
+            ),
             header(DATA),
-            about(DATA.about),
+            about(DATA.about, DATA.about_es),
             rx.divider(),
             tech_stack(DATA.technologies),
-            info("Experience", DATA.experience),
-            info("Projects", DATA.projects),
-            info("Academy", DATA.training),
+            info(
+                "Experience", "Experiencia",
+                DATA.experience
+            ),
+            info(
+                "Projects", "Proyectos",
+                DATA.projects
+            ),
+            info(
+                "Academy", "Formación",
+                DATA.training
+            ),
             extra(DATA.extras),
             rx.divider(),
-            footer(DATA.media),
+            footer(DATA.media, DATA.name),
             spacing=Size.MEDIUM.value,
             padding_x=EmSize.MEDIUM.value,
             padding_y=EmSize.BIG.value,

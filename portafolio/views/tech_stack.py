@@ -1,12 +1,13 @@
 import reflex as rx
 from portafolio.components.heading import heading
 from portafolio.data import Technology
+from portafolio.state import LanguageState
 from portafolio.styles.styles import EmSize, Size
 
 
 def tech_stack(technologies: list[Technology]) -> rx.Component:
     return rx.vstack(
-        heading("Technologies"),
+        heading(rx.cond(LanguageState.language == "es", "Tecnologías", "Technologies")),
         rx.flex(
             *[
                 rx.badge(

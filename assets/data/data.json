@@ -5,6 +5,7 @@
     "avatar": "/avatar.jpg",
     "name": "Gerardo Herrera Reyes",
     "skill": "iOS Developer and tech enthusiast",
+    "skill_es": "Desarrollador iOS y entusiasta de la tecnología",
     "location": "Mexico",
     "media": {
         "email": "gerardohre@gmail.com",
@@ -12,7 +13,8 @@
         "github": "https://github.com/geraballz",
         "likedin": "https://www.linkedin.com/in/gerardo-herrera-b83098130/"
     },
-    "about": "I love technology; I’ve always been passionate about creating my own things or understanding how something works, committed to my projects and the challenges that come my way.",
+    "about": "I love technology; I've always been passionate about creating my own things or understanding how something works, committed to my projects and the challenges that come my way.",
+    "about_es": "Me apasiona la tecnología; siempre me ha entusiasmado crear mis propias cosas o entender cómo funciona algo. Estoy comprometido con mis proyectos y los retos que se presentan en el camino.",
     "technologies": [
         {
             "icon": "devicon-devicon-plain",
@@ -32,28 +34,36 @@
             "icon": "terminal",
             "title": "Grainchain",
             "subtitle": "Senior iOS Developer",
+            "subtitle_es": "Desarrollador iOS Senior",
             "description": "Full UI programmatically and custom graphics controls.",
+            "description_es": "UI completamente programática y controles gráficos personalizados.",
             "date": "2020"
         },
         {
             "icon": "terminal",
             "title": "Pegasus Control",
             "subtitle": "iOS Developer",
+            "subtitle_es": "Desarrollador iOS",
             "description": "Objective-C/Swift",
+            "description_es": "Objective-C/Swift",
             "date": "2017"
         },
         {
             "icon": "terminal",
             "title": "Global Standard",
             "subtitle": "iOS Developer",
+            "subtitle_es": "Desarrollador iOS",
             "description": "iOS app development",
+            "description_es": "Desarrollo de aplicaciones iOS",
             "date": "2017"
         },
         {
             "icon": "terminal",
             "title": "Jaguar Labs Mobile Developer",
             "subtitle": "Trainee iOS Developer",
+            "subtitle_es": "Desarrollador iOS en Formación",
             "description": "iOS app development",
+            "description_es": "Desarrollo de aplicaciones iOS",
             "date": "2017"
         }
     ],
@@ -62,7 +72,9 @@
             "icon": "scan-eye",
             "title": "Visio Driver Assistant",
             "subtitle": "Tech enthusiast?",
+            "subtitle_es": "¿Entusiasta de la tecnología?",
             "description": "Visio Driver Assistant helps you identify objects while driving with alerts",
+            "description_es": "Visio Driver Assistant te ayuda a identificar objetos mientras conduces con alertas de aviso.",
             "technologies": [
                 {
                     "icon": "devicon-apple-original",
@@ -76,12 +88,14 @@
             "image": "/project_1.jpg",
             "url": "https://apps.apple.com/mx/app/visio-driver-assistant/id6743371166",
             "github": "https://geraballz.github.io/Visio-driver-assistant/"
-        }, 
+        },
         {
             "icon": "cpu",
             "title": "WifiCamCarro",
             "subtitle": "Build your remote-controlled robot, and with this app, you can control it!",
+            "subtitle_es": "¡Construye tu robot teledirigido y contrólalo con esta app!",
             "description": "You can watch a video stream, control direction, lights, colors, speed, and record video using UDP commands.",
+            "description_es": "Puedes ver transmisión de video, controlar dirección, luces, colores, velocidad y grabar video usando comandos UDP.",
             "technologies": [
                 {
                     "icon": "devicon-apple-original",
@@ -95,7 +109,6 @@
                     "icon": "devicon-arduino-plain",
                     "name": "Arduino"
                 }
-                
             ],
             "image": "/project_2.jpg",
             "url": "https://apps.apple.com/mx/app/wificamcarro/id6744302034",
@@ -104,8 +117,10 @@
         {
             "icon": "music",
             "title": "Classic Music Box",
-            "subtitle": "Choose play and enjoy the music with this classic sounds.",
+            "subtitle": "Choose, play and enjoy the music with classic sounds.",
+            "subtitle_es": "Elige, reproduce y disfruta la música con estos sonidos clásicos.",
             "description": "",
+            "description_es": "",
             "technologies": [
                 {
                     "icon": "devicon-apple-original",
@@ -115,36 +130,37 @@
                     "icon": "devicon-swift-plain",
                     "name": "Swift"
                 }
-                
             ],
             "image": "/project_3.jpg",
             "url": "https://apps.apple.com/mx/app/classic-music-box/id1572054860",
             "github": ""
         },
-                {
+        {
             "icon": "terminal",
             "title": "Mi Empleo Seguro",
-            "subtitle": "Busca profesiones cerca de ti.",
+            "subtitle": "Find jobs near you.",
+            "subtitle_es": "Busca empleos cerca de ti.",
             "description": "",
+            "description_es": "",
             "technologies": [
                 {
                     "icon": "nodejs",
                     "name": "Web"
                 }
-                
             ],
             "image": "/project_4.jpg",
             "url": "https://miempleoseguro.xyz",
             "github": ""
         }
-        
     ],
     "training": [
         {
             "icon": "graduation-cap",
             "title": "Tecnológico Nacional de México",
             "subtitle": "Mexico",
-            "description": "Ing. Sistemas Computacionales",
+            "subtitle_es": "México",
+            "description": "B.S. in Computer Systems Engineering",
+            "description_es": "Ing. Sistemas Computacionales",
             "date": "2016",
             "certificate": ""
         }
@@ -153,13 +169,17 @@
         {
             "image": "/extra_1.jpg",
             "title": "Programming Contest",
+            "title_es": "Concurso de Programación",
             "description": "Second Place",
+            "description_es": "Segundo Lugar",
             "url": ""
         },
         {
             "image": "/extra_2.jpg",
-            "title": "Certification Microsoft TechnologyAssociate.",
+            "title": "Microsoft Technology Associate Certification",
+            "title_es": "Certificación Microsoft Technology Associate",
             "description": "F569-4918",
+            "description_es": "F569-4918",
             "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
         }
     ]

@@ -2,18 +2,30 @@ import reflex as rx
 from portafolio.components.icon_badge import icon_badge
 from portafolio.components.icon_button import icon_button
 from portafolio.data import Info
+from portafolio.state import LanguageState
 from portafolio.styles.styles import IMAGE_HEIGHT, EmSize, Size
 
 
 def info_detail(info: Info) -> rx.Component:
+    subtitle_text = rx.cond(
+        LanguageState.language == "es",
+        info.subtitle_es if info.subtitle_es else info.subtitle,
+        info.subtitle
+    )
+    description_text = rx.cond(
+        LanguageState.language == "es",
+        info.description_es if info.description_es else info.description,
+        info.description
+    )
+
     return rx.flex(
         rx.hstack(
             icon_badge(info.icon),
             rx.vstack(
                 rx.text.strong(info.title),
-                rx.text(info.subtitle),
+                rx.text(subtitle_text),
                 rx.text(
-                    info.description,
+                    description_text,
                     size=Size.SMALL.value,
                     color_scheme="gray"
                 ),
